@@ -1,0 +1,7 @@
+C:\Users\lucas.fmfaria\source\repos\Centro_Pokemon\sistema de cadastro\sistema de cadastro\bin\Debug\sistema de cadastro.exe.config
+C:\Users\lucas.fmfaria\source\repos\Centro_Pokemon\sistema de cadastro\sistema de cadastro\bin\Debug\sistema de cadastro.exe
+C:\Users\lucas.fmfaria\source\repos\Centro_Pokemon\sistema de cadastro\sistema de cadastro\bin\Debug\sistema de cadastro.pdb
+C:\Users\lucas.fmfaria\source\repos\Centro_Pokemon\sistema de cadastro\sistema de cadastro\obj\Debug\sistema de cadastro.csproj.AssemblyReference.cache
+C:\Users\lucas.fmfaria\source\repos\Centro_Pokemon\sistema de cadastro\sistema de cadastro\obj\Debug\sistema de cadastro.csproj.CoreCompileInputs.cache
+C:\Users\lucas.fmfaria\source\repos\Centro_Pokemon\sistema de cadastro\sistema de cadastro\obj\Debug\sistema de cadastro.exe
+C:\Users\lucas.fmfaria\source\repos\Centro_Pokemon\sistema de cadastro\sistema de cadastro\obj\Debug\sistema de cadastro.pdb
