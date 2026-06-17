@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lucas.fmfaria\\source\\repos\\Centro_Pokemon\\sistema de cadastro\\",
+  "WorkspaceRootPath": "C:\\Users\\lucas.fmfaria\\source\\repos\\Cadastro\\sistema de cadastro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D803511-7519-4290-B0C8-3C6804BE7572}|sistema de cadastro\\sistema de cadastro.csproj|c:\\users\\lucas.fmfaria\\source\\repos\\centro_pokemon\\sistema de cadastro\\sistema de cadastro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D803511-7519-4290-B0C8-3C6804BE7572}|sistema de cadastro\\sistema de cadastro.csproj|c:\\users\\lucas.fmfaria\\source\\repos\\cadastro\\sistema de cadastro\\sistema de cadastro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D803511-7519-4290-B0C8-3C6804BE7572}|sistema de cadastro\\sistema de cadastro.csproj|solutionrelative:sistema de cadastro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lucas.fmfaria\\source\\repos\\Centro_Pokemon\\sistema de cadastro\\sistema de cadastro\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\lucas.fmfaria\\source\\repos\\Cadastro\\sistema de cadastro\\sistema de cadastro\\Program.cs",
               "RelativeDocumentMoniker": "sistema de cadastro\\Program.cs",
-              "ToolTip": "C:\\Users\\lucas.fmfaria\\source\\repos\\Centro_Pokemon\\sistema de cadastro\\sistema de cadastro\\Program.cs",
+              "ToolTip": "C:\\Users\\lucas.fmfaria\\source\\repos\\Cadastro\\sistema de cadastro\\sistema de cadastro\\Program.cs",
               "RelativeToolTip": "sistema de cadastro\\Program.cs",
-              "ViewState": "AgIAAMoAAAAAAAAAAAAcwOYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAcwOYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-12T11:31:38.978Z",
               "EditorCaption": ""

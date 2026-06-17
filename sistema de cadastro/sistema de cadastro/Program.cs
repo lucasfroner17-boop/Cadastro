@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace sistema_de_cadastro
@@ -39,6 +40,8 @@ namespace sistema_de_cadastro
                 Console.WriteLine("\n 6-cadastro de livro ");
                 Console.WriteLine("\n 7-cadastro de restaurante cardapio");
                 Console.WriteLine("\n 8-cadastro de jogos");
+                Console.WriteLine("\n 9- cadastro de musicas");
+                Console.WriteLine("\n 10-sair");
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("digite a opcao escolhida:");
                 Console.ResetColor();
@@ -58,15 +61,27 @@ namespace sistema_de_cadastro
                         cadastro_de_locadora_vhs();
                         break;
                     case 5:
+                        cadastro_de_oficina_mecanica();
                         break;
-                    case 6:
+                    case 6:cadastro_de_livros();
                         break;
-                    case 7:
+                    case 7:cadastro_de_restaurante();
                         break;
-                    case 8:
+                    case 8:cadastro_de_jogos();
                         break;
-
-
+                    case 9:cadastro_de_musicas();
+                        break;
+                    case 10:
+                        Console.Clear();
+                        Console.WriteLine(@"
+░█████╗░██████╗░██████╗░██╗░██████╗░░█████╗░██████╗░░█████╗░
+██╔══██╗██╔══██╗██╔══██╗██║██╔════╝░██╔══██╗██╔══██╗██╔══██╗
+██║░░██║██████╦╝██████╔╝██║██║░░██╗░███████║██║░░██║██║░░██║
+██║░░██║██╔══██╗██╔══██╗██║██║░░╚██╗██╔══██║██║░░██║██║░░██║
+╚█████╔╝██████╦╝██║░░██║██║╚██████╔╝██║░░██║██████╔╝╚█████╔╝
+░╚════╝░╚═════╝░╚═╝░░╚═╝╚═╝░╚═════╝░╚═╝░░╚═╝╚═════╝░░╚════╝░");
+                        Thread.Sleep(2000);
+                        break;
 
                 }
 
@@ -191,7 +206,7 @@ namespace sistema_de_cadastro
             Console.WriteLine("\n categoria:");
             string avaliaçãoanime = Console.ReadLine();
             Console.WriteLine("\n classificação");
-            string classificação = Console.ReadLine();  
+            string classificação = Console.ReadLine();
 
 
 
@@ -223,11 +238,205 @@ namespace sistema_de_cadastro
             Console.WriteLine("\n categoria:");
             string anolançamento = Console.ReadLine();
             Console.WriteLine("\n livre ou emprestado:");
-            string livreouemprstado = Console.ReadLine();   
+            string livreouemprstado = Console.ReadLine();
 
 
 
         }
+        static void cadastro_de_oficina_mecanica()
+        {
 
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine(@"
+░█████╗░░█████╗░██████╗░░█████╗░░██████╗████████╗██████╗░░█████╗░  ██████╗░███████╗
+██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗  ██╔══██╗██╔════╝
+██║░░╚═╝███████║██║░░██║███████║╚█████╗░░░░██║░░░██████╔╝██║░░██║  ██║░░██║█████╗░░
+██║░░██╗██╔══██║██║░░██║██╔══██║░╚═══██╗░░░██║░░░██╔══██╗██║░░██║  ██║░░██║██╔══╝░░
+╚█████╔╝██║░░██║██████╔╝██║░░██║██████╔╝░░░██║░░░██║░░██║╚█████╔╝  ██████╔╝███████╗
+░╚════╝░╚═╝░░╚═╝╚═════╝░╚═╝░░╚═╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░  ╚═════╝░╚══════╝
+
+░█████╗░███████╗██╗░█████╗░██╗███╗░░██╗░█████╗░
+██╔══██╗██╔════╝██║██╔══██╗██║████╗░██║██╔══██╗
+██║░░██║█████╗░░██║██║░░╚═╝██║██╔██╗██║███████║
+██║░░██║██╔══╝░░██║██║░░██╗██║██║╚████║██╔══██║
+╚█████╔╝██║░░░░░██║╚█████╔╝██║██║░╚███║██║░░██║
+░╚════╝░╚═╝░░░░░╚═╝░╚════╝░╚═╝╚═╝░░╚══╝╚═╝░░╚═╝
+
+███╗░░░███╗███████╗░█████╗░░█████╗░███╗░░██╗██╗░█████╗░░█████╗░
+████╗░████║██╔════╝██╔══██╗██╔══██╗████╗░██║██║██╔══██╗██╔══██╗
+██╔████╔██║█████╗░░██║░░╚═╝███████║██╔██╗██║██║██║░░╚═╝███████║
+██║╚██╔╝██║██╔══╝░░██║░░██╗██╔══██║██║╚████║██║██║░░██╗██╔══██║
+██║░╚═╝░██║███████╗╚█████╔╝██║░░██║██║░╚███║██║╚█████╔╝██║░░██║
+╚═╝░░░░░╚═╝╚══════╝░╚════╝░╚═╝░░╚═╝╚═╝░░╚══╝╚═╝░╚════╝░╚═╝░░╚═╝");
+            Console.ResetColor();
+            Console.WriteLine("\n qual a ordem de serviço? ");
+            string ordemservico = Console.ReadLine();
+            Console.WriteLine("\n qual as peças? ");
+            string pecas = Console.ReadLine();
+            Console.WriteLine("\n nome dos funcionarios?  ");
+            string nomefuncionarios = Console.ReadLine();
+            Console.WriteLine("\n qual o historico de manuntenção ");
+            string historicomanutencao = Console.ReadLine();
+            Console.WriteLine("\n quais os valores? ");
+            string valores = Console.ReadLine();
+            Console.WriteLine("\n qual a data de agendamento? ");
+            string dataagendamento = Console.ReadLine();
+            Console.WriteLine("\n qual o nome do cliente? ");
+            string nomecliente = Console.ReadLine();
+            Console.WriteLine("oficina mecanica cadastrada");
+            Thread.Sleep(2000);
+            // pausa na programação por 2s
+        }
+        static void cadastro_de_livros()
+        {
+
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine(@"
+░█████╗░░█████╗░██████╗░░█████╗░░██████╗████████╗██████╗░░█████╗░  ██████╗░███████╗
+██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗  ██╔══██╗██╔════╝
+██║░░╚═╝███████║██║░░██║███████║╚█████╗░░░░██║░░░██████╔╝██║░░██║  ██║░░██║█████╗░░
+██║░░██╗██╔══██║██║░░██║██╔══██║░╚═══██╗░░░██║░░░██╔══██╗██║░░██║  ██║░░██║██╔══╝░░
+╚█████╔╝██║░░██║██████╔╝██║░░██║██████╔╝░░░██║░░░██║░░██║╚█████╔╝  ██████╔╝███████╗
+░╚════╝░╚═╝░░╚═╝╚═════╝░╚═╝░░╚═╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░  ╚═════╝░╚══════╝
+
+██╗░░░░░██╗██╗░░░██╗██████╗░░█████╗░░██████╗
+██║░░░░░██║██║░░░██║██╔══██╗██╔══██╗██╔════╝
+██║░░░░░██║╚██╗░██╔╝██████╔╝██║░░██║╚█████╗░
+██║░░░░░██║░╚████╔╝░██╔══██╗██║░░██║░╚═══██╗
+███████╗██║░░╚██╔╝░░██║░░██║╚█████╔╝██████╔╝
+╚══════╝╚═╝░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░╚═════╝░");
+            Console.ResetColor();
+            Console.WriteLine("\n qual o titulo?  ");
+            string titulo = Console.ReadLine();
+            Console.WriteLine("\n qual o ano que lançou? ");
+            string ano = Console.ReadLine();
+            Console.WriteLine("\n qual a classificação? ");
+            string classificacao = Console.ReadLine();
+            Console.WriteLine("\n qual a quantidade de paginas? ");
+            string quantidadepaginas = Console.ReadLine();
+            Console.WriteLine("\n qual o genero? ");
+            string genero = Console.ReadLine();
+            Console.WriteLine("\n qual o nome do autor? ");
+            string nomeautor = Console.ReadLine();
+            Console.WriteLine("\n qual a editora? ");
+            string editora = Console.ReadLine();
+            Console.WriteLine("livro cadastrado");
+            Thread.Sleep(2000);
+            // pausa na programação por 2s
+        }
+        static void cadastro_de_restaurante()
+        {
+
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine(@"
+░█████╗░░█████╗░██████╗░░█████╗░░██████╗████████╗██████╗░░█████╗░  ██████╗░███████╗
+██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗  ██╔══██╗██╔════╝
+██║░░╚═╝███████║██║░░██║███████║╚█████╗░░░░██║░░░██████╔╝██║░░██║  ██║░░██║█████╗░░
+██║░░██╗██╔══██║██║░░██║██╔══██║░╚═══██╗░░░██║░░░██╔══██╗██║░░██║  ██║░░██║██╔══╝░░
+╚█████╔╝██║░░██║██████╔╝██║░░██║██████╔╝░░░██║░░░██║░░██║╚█████╔╝  ██████╔╝███████╗
+░╚════╝░╚═╝░░╚═╝╚═════╝░╚═╝░░╚═╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░  ╚═════╝░╚══════╝
+
+██████╗░███████╗░██████╗████████╗░█████╗░██╗░░░██╗██████╗░░█████╗░███╗░░██╗████████╗███████╗
+██╔══██╗██╔════╝██╔════╝╚══██╔══╝██╔══██╗██║░░░██║██╔══██╗██╔══██╗████╗░██║╚══██╔══╝██╔════╝
+██████╔╝█████╗░░╚█████╗░░░░██║░░░███████║██║░░░██║██████╔╝███████║██╔██╗██║░░░██║░░░█████╗░░
+██╔══██╗██╔══╝░░░╚═══██╗░░░██║░░░██╔══██║██║░░░██║██╔══██╗██╔══██║██║╚████║░░░██║░░░██╔══╝░░
+██║░░██║███████╗██████╔╝░░░██║░░░██║░░██║╚██████╔╝██║░░██║██║░░██║██║░╚███║░░░██║░░░███████╗
+╚═╝░░╚═╝╚══════╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝░╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝░░░╚═╝░░░╚══════╝");
+            Console.ResetColor();
+            Console.WriteLine("\n qual o nome do restaurante? ");
+            string nomerestaurante = Console.ReadLine();
+            Console.WriteLine("\n qual o preço? ");
+            string preco = Console.ReadLine();
+            Console.WriteLine("\n qual os ingredientes? ");
+            string ingredientes = Console.ReadLine();
+            Console.WriteLine("\n qual a descrição? ");
+            string descricao = Console.ReadLine();
+            Console.WriteLine("restaurante cardapio cadastrado");
+            Thread.Sleep(2000); // pausa na programação por 2s
+        }
+        static void cadastro_de_jogos()
+        {
+
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine(@"
+░█████╗░░█████╗░██████╗░░█████╗░░██████╗████████╗██████╗░░█████╗░  ██████╗░███████╗
+██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗  ██╔══██╗██╔════╝
+██║░░╚═╝███████║██║░░██║███████║╚█████╗░░░░██║░░░██████╔╝██║░░██║  ██║░░██║█████╗░░
+██║░░██╗██╔══██║██║░░██║██╔══██║░╚═══██╗░░░██║░░░██╔══██╗██║░░██║  ██║░░██║██╔══╝░░
+╚█████╔╝██║░░██║██████╔╝██║░░██║██████╔╝░░░██║░░░██║░░██║╚█████╔╝  ██████╔╝███████╗
+░╚════╝░╚═╝░░╚═╝╚═════╝░╚═╝░░╚═╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░  ╚═════╝░╚══════╝
+
+░░░░░██╗░█████╗░░██████╗░░█████╗░░██████╗
+░░░░░██║██╔══██╗██╔════╝░██╔══██╗██╔════╝
+░░░░░██║██║░░██║██║░░██╗░██║░░██║╚█████╗░
+██╗░░██║██║░░██║██║░░╚██╗██║░░██║░╚═══██╗
+╚█████╔╝╚█████╔╝╚██████╔╝╚█████╔╝██████╔╝
+░╚════╝░░╚════╝░░╚═════╝░░╚════╝░╚═════╝░");
+            Console.ResetColor();
+            Console.WriteLine("\n qual o titulo?  ");
+            string titulo = Console.ReadLine();
+            Console.WriteLine("\n qual o ano que lançou? "); 
+            string ano = Console.ReadLine();
+            Console.WriteLine("\n qual o preço? ");
+            string preco = Console.ReadLine();
+            Console.WriteLine("\n qual a desenvolvedora? ");
+            string desenvolvedora = Console.ReadLine();
+            Console.WriteLine("\n qual a avaliação? "); 
+            string avaliacao = Console.ReadLine();
+            Console.WriteLine("\n qual a classificação? ");
+            string classificacao = Console.ReadLine();
+            Console.WriteLine("\n qual a plataforma? ");
+            string plataforma = Console.ReadLine();
+            Console.WriteLine("jogo cadastrado");
+            Thread.Sleep(2000);
+            // pausa na programação por 2s
+       }
+        static void cadastro_de_musicas()
+        {
+
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine(@"
+░█████╗░░█████╗░██████╗░░█████╗░░██████╗████████╗██████╗░░█████╗░  ██████╗░███████╗
+██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗  ██╔══██╗██╔════╝
+██║░░╚═╝███████║██║░░██║███████║╚█████╗░░░░██║░░░██████╔╝██║░░██║  ██║░░██║█████╗░░
+██║░░██╗██╔══██║██║░░██║██╔══██║░╚═══██╗░░░██║░░░██╔══██╗██║░░██║  ██║░░██║██╔══╝░░
+╚█████╔╝██║░░██║██████╔╝██║░░██║██████╔╝░░░██║░░░██║░░██║╚█████╔╝  ██████╔╝███████╗
+░╚════╝░╚═╝░░╚═╝╚═════╝░╚═╝░░╚═╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░  ╚═════╝░╚══════╝
+
+███╗░░░███╗██╗░░░██╗░██████╗██╗░█████╗░░█████╗░░██████╗
+████╗░████║██║░░░██║██╔════╝██║██╔══██╗██╔══██╗██╔════╝
+██╔████╔██║██║░░░██║╚█████╗░██║██║░░╚═╝███████║╚█████╗░
+██║╚██╔╝██║██║░░░██║░╚═══██╗██║██║░░██╗██╔══██║░╚═══██╗
+██║░╚═╝░██║╚██████╔╝██████╔╝██║╚█████╔╝██║░░██║██████╔╝
+╚═╝░░░░░╚═╝░╚═════╝░╚═════╝░╚═╝░╚════╝░╚═╝░░╚═╝╚═════╝░");
+            Console.ResetColor();
+            Console.WriteLine("\n qual a data de criação? ");
+            string datacriacao = Console.ReadLine();
+            Console.WriteLine("\n qual o nome da playlist? "); 
+            string playlist = Console.ReadLine();
+            Console.WriteLine("\n qual a quantidade de musicas? ");
+            string qntmusicas = Console.ReadLine();
+            Console.WriteLine("\n qual o cadastro das musicas?  ");
+            string cadastromusicas = Console.ReadLine();
+            Console.WriteLine("\n qual o artista mais ouvido?  ");
+            string artista = Console.ReadLine();
+            Console.WriteLine("\n qual a qnt de musica desse artista? ");
+            string musicaartista = Console.ReadLine();
+            Console.WriteLine("\n é publica ou privada?  ");
+            string publicaprivada = Console.ReadLine();
+            Console.WriteLine("\n qual a duração total em minutos?  ");
+            string duracao = Console.ReadLine();
+            Console.WriteLine("musicas cadastradas");
+            Thread.Sleep(2000); // pausa na programação por 2s
+        }
+
+    }
 }
-}
+       
+
+
